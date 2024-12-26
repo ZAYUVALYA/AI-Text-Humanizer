@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZAYUVALYA - AI Humanizer: Free and open-source tool for paraphrasing and humanizing text. 100% free, no login required, with responsive design and SEO optimization.">
+    <meta name="keywords" content="AI Humanizer, Humanizer AI Free, Free Paraphrasing Tool, Open Source AI Tools">
+    <meta name="author" content="ZAYUVALYA">
+    <title>ZAYUVALYA - AI Humanizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>ZAYUVALYA - AI Humanizer</h1>
+            <nav>
+                <a href="#" class="top-link">Get More Tools</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <section class="main-content">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+                                <div class="counters">
+                                    <p>Word Count: <span id="wordCount">0</span></p>
+                                    <p>Sentence Count: <span id="sentenceCount">0</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div id="outputPreview" class="preview-box"></div>
+                                <textarea id="outputText" readonly style="display: none;"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="actions">
+                <button id="paraphraseBtn">Paraphrase</button>
+                <button id="copyBtn">Copy Output</button>
+            </div>
+        </section>
+
+        <section class="description">
+            <h2>About the Project</h2>
+            <p>Welcome to ZAYUVALYA - AI Humanizer, a powerful paraphrasing tool designed to humanize text effortlessly. This tool is completely free, open-source, and requires no login. It’s built for writers, students, and anyone who needs text rephrased while preserving its meaning and natural tone.</p>
+            <p>Our tool uses a robust synonym-based engine that considers the context of your input, ensuring that essential terms and names remain unchanged. Highlighted changes in the output make it easy to identify modifications.</p>
+            <p>Currently in development, ZAYUVALYA - AI Humanizer aims to be your go-to text humanizing assistant!</p>
+        </section>
+
+        <section class="instructions">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Enter your text in the input box on the left.</li>
+                <li>Click the <strong>Paraphrase</strong> button to see the humanized text appear on the right.</li>
+                <li>Words replaced are highlighted for easy identification.</li>
+                <li>Use the <strong>Copy Output</strong> button to copy the results.</li>
+                <li>Track word and sentence counts below the input box.</li>
+            </ol>
+        </section>
+
+        <section class="open-source">
+            <h2>Open Source Project</h2>
+            <p>ZAYUVALYA - AI Humanizer is an open-source project. Feel free to contribute, fork, or share your feedback on our GitHub repository. Together, let’s make text paraphrasing smarter and more accessible!</p>
+            <button class="donate-btn">Donate</button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 ZAYUVALYA. Built with ❤️ for the community. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
