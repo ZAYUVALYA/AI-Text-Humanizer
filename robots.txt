@@ -1,0 +1,29 @@
+User-agent: *
+# Allow main page access
+Allow: /index.html
+Allow: /
+
+# Protect all other files and directories
+Disallow: /script.js
+Disallow: /styles.css
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /assets/
+Disallow: /src/
+Disallow: /tests/
+Disallow: /docs/
+
+# Sitemap declaration (optional, since we only have one page)
+Sitemap: https://zayuvalya.github.io/AI-Text-Humanizer/sitemap.xml
+
+# Prevent caching and archiving
+Noarchive: /
