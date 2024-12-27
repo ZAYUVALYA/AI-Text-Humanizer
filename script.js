@@ -1,6 +1,14 @@
 let vocabulary = {};
 let stopWords = [];
-let fixedTerms = ["halal", "haram", "sharia", "jihad", "zakat", "hajj", "umrah", "Allah", "Jesus", "Buddha", "nirvana", "dharma", "Tao", "karma", "sin", "salvation", "amen", "hallelujah", "om", "mantra", "Torah", "Gospel", "Quran", "Bible", "Talmud", "Scriptures", "Ten Commandments", "Five Pillars of Islam", "Eightfold Path", "sacrament", "worship", "prayer", "meditation", "faith", "hope", "charity", "forgiveness", "heaven", "hell", "soul", "spirit", "God", "creator", "divine", "sacred", "holy", "prophet", "apostle", "saint", "angel", "demon", "Satan", "evil", "good", "righteousness", "justice", "mercy", "compassion", "love", "peace"];
+let fixedTerms = [];
+
+fetch('fixedterms.json')
+    .then(response => response.json())
+    .then(data => {
+        fixedTerms = data;
+        console.log("Fixed terms loaded successfully.");
+    })
+    .catch(error => console.error("Error loading fixed terms:", error));
 
 
 fetch('https://zayuvalya.github.io/Library/Languages/eng_synonyms.json')
@@ -108,11 +116,17 @@ paraphraseButton.addEventListener('click', () => {
 
     const plainParaphrasedText = outputPreviewElement.innerText;
     outputTextElement.value = plainParaphrasedText;
+
+    outputWordCount.textContent = countWords(plainParaphrasedText);
+    outputSentenceCount.textContent = countSentences(plainParaphrasedText);
 });
 
 const copyButton = document.getElementById('copyBtn');
 copyButton.addEventListener('click', () => {
-    outputTextElement.select();
+    const outputText = document.getElementById('outputText');
+    outputText.style.display = 'block';
+    outputText.select();
     document.execCommand('copy');
     alert('Text copied to clipboard!');
+    outputText.style.display = 'none';
 });
