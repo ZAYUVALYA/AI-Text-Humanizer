@@ -45,32 +45,32 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-roboto">
+<body class="bg-gray-900 text-gray-200 font-roboto">
     <div class="container mx-auto p-4">
         <!-- Header -->
         <header class="flex justify-between items-center py-4">
             <h1 class="text-2xl font-bold">ZAYUVALYA - AI Humanizer</h1>
             <nav>
-                <a href="#" class="text-blue-500 hover:underline">Get More Tools</a>
+                <a href="#" class="text-blue-400 hover:underline">Get More Tools</a>
             </nav>
         </header>
 
         <!-- Main Content -->
-        <section class="bg-white p-6 rounded-lg shadow-md">
+        <section class="bg-gray-800 p-6 rounded-lg shadow-md">
             <div class="flex flex-col space-y-4">
                 <div>
                     <h2 class="text-lg font-semibold mb-2">Input</h2>
-                    <textarea id="inputText" class="w-full p-2 border rounded" placeholder="Enter your text here..." style="height: 131px;"></textarea>
-                    <div class="flex justify-between mt-2 text-sm text-gray-600">
+                    <textarea id="inputText" class="w-full p-2 border border-gray-700 rounded bg-gray-700 text-gray-200" placeholder="Enter your text here..." style="height: 131px;"></textarea>
+                    <div class="flex justify-between mt-2 text-sm text-gray-400">
                         <p>Word Count: <span id="wordCount">0</span></p>
                         <p>Sentence Count: <span id="sentenceCount">0</span></p>
                     </div>
                 </div>
                 <div>
                     <h2 class="text-lg font-semibold mb-2">Output</h2>
-                    <div id="outputPreview" class="w-full p-2 border rounded h-32 overflow-y-auto"></div>
-                    <textarea id="outputText" class="w-full p-2 border rounded hidden" readonly></textarea>
-                    <div class="flex justify-between mt-2 text-sm text-gray-600">
+                    <div id="outputPreview" class="w-full p-2 border border-gray-700 rounded bg-gray-700 text-gray-200 h-32 overflow-y-auto"></div>
+                    <textarea id="outputText" class="w-full p-2 border border-gray-700 rounded bg-gray-700 text-gray-200 hidden" readonly></textarea>
+                    <div class="flex justify-between mt-2 text-sm text-gray-400">
                         <p>Word Count: <span id="outputWordCount">0</span></p>
                         <p>Sentence Count: <span id="outputSentenceCount">0</span></p>
                     </div>
@@ -82,14 +82,14 @@
             </div>
         </section>
 
-        <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <section class="mt-8 bg-gray-800 p-6 rounded-lg shadow-md">
             <h2 class="text-xl font-semibold mb-4">About the Project</h2>
             <p class="mb-2">Welcome to ZAYUVALYA - AI Humanizer, a powerful paraphrasing tool designed to humanize text effortlessly. This tool is completely free, open-source, and requires no login. It’s built for writers, students, and anyone who needs text rephrased while preserving its meaning and natural tone.</p>
             <p class="mb-2">Our tool uses a robust synonym-based engine that considers the context of your input, ensuring that essential terms and names remain unchanged. Highlighted changes in the output make it easy to identify modifications.</p>
             <p>Currently in development, ZAYUVALYA - AI Humanizer aims to be your go-to text humanizing assistant!</p>
         </section>
 
-        <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <section class="mt-8 bg-gray-800 p-6 rounded-lg shadow-md">
             <h2 class="text-xl font-semibold mb-4">How to Use</h2>
             <ol class="list-decimal list-inside space-y-2">
                 <li>Enter your text in the input box on the left.</li>
@@ -100,7 +100,7 @@
             </ol>
         </section>
 
-        <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <section class="mt-8 bg-gray-800 p-6 rounded-lg shadow-md">
             <h2 class="text-xl font-semibold mb-4">Open Source Project</h2>
             <p class="mb-4">ZAYUVALYA - AI Humanizer is an open-source project. Feel free to contribute, fork, or share your feedback on our GitHub repository. Together, let’s make text paraphrasing smarter and more accessible!</p>
             <a href="https://github.com/ZAYUVALYA/AI-Text-Humanizer" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 inline-block">Project Repository</a>
@@ -108,12 +108,11 @@
         </section>
 
         <!-- Footer -->
-        <footer class="mt-8 py-4 text-center text-sm text-gray-600">
-            <p>&copy; 2024 ZAYUVALYA. Built with ❤️ for the community. <a href="#" class="text-blue-500 hover:underline">Privacy Policy</a> | <a href="#" class="text-blue-500 hover:underline">Terms of Use</a></p>
+        <footer class="mt-8 py-4 text-center text-sm text-gray-400">
+            <p>&copy; 2024 ZAYUVALYA. Built with ❤️ for the community. <a href="#" class="text-blue-400 hover:underline">Privacy Policy</a> | <a href="#" class="text-blue-400 hover:underline">Terms of Use</a></p>
         </footer>
     </div>
 
-    <script src="script.js"></script>
     <script>
         document.addEventListener('input', function (event) {
             if (event.target.tagName.toLowerCase() === 'textarea') {
@@ -133,5 +132,6 @@
             field.style.height = height + 'px';
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
