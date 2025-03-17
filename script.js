@@ -11,7 +11,7 @@ fetch('fixedterms.json')
     .catch(error => console.error("Error loading fixed terms:", error));
 
 
-fetch('https://zayuvalya.github.io/Library/Languages/eng_synonyms.json')
+fetch('https://raw.githubusercontent.com/ZAYUVALYA/AI-Text-Humanizer/refs/heads/main/eng_synonyms.json')
     .then(response => response.json())
     .then(data => {
         vocabulary = data;
