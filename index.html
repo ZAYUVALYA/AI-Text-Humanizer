@@ -1,186 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ZAYUVALYA - AI Humanizer: Free and open-source tool for paraphrasing and humanizing text. 100% free, no login required, with responsive design and SEO optimization." />
-  <meta name="keywords" content="AI Humanizer, Humanizer AI Free, Free Paraphrasing Tool, Open Source AI Tools" />
-  <meta name="author" content="ZAYUVALYA" />
-  <title>ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool | Anti AI Detection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZAYUVALYA - AI Humanizer: Free and open-source tool for paraphrasing and humanizing text. 100% free, no login required, with responsive design and SEO optimization." />
+    <meta name="keywords" content="AI Humanizer, Humanizer AI Free, Free Paraphrasing Tool, Open Source AI Tools" />
+    <meta name="author" content="ZAYUVALYA" />
+    <title>ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool | Anti AI Detection</title>
 
-  <!-- Primary Meta Tags -->
-  <meta name="title" content="ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool | Anti AI Detection" />
-  <meta name="description" content="Free online AI text humanizer and paraphraser. Bypass AI detection, create human-like content, and avoid plagiarism. No login required, 100% free tool for students and writers." />
-  <meta name="keywords" content="AI Humanizer, AI Text, Paraphraser, Anti Plagiarism, Anti AI, Bypass AI Detection, AI Text Converter, Human Writing Generator, Free AI Tool, AI Detection Bypass, Text Humanizer" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool | Anti AI Detection" />
+    <meta name="description" content="Free online AI text humanizer and paraphraser. Bypass AI detection, create human-like content, and avoid plagiarism. No login required, 100% free tool for students and writers." />
+    <meta name="keywords" content="AI Humanizer, AI Text, Paraphraser, Anti Plagiarism, Anti AI, Bypass AI Detection, AI Text Converter, Human Writing Generator, Free AI Tool, AI Detection Bypass, Text Humanizer" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://zayuvalya.github.io/AI-Text-Humanizer/" />
-  <meta property="og:title" content="ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool" />
-  <meta property="og:description" content="Free online AI text humanizer and paraphraser. Bypass AI detection, create human-like content, and avoid plagiarism. No login required, 100% free tool." />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zayuvalya.github.io/AI-Text-Humanizer/" />
+    <meta property="og:title" content="ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool" />
+    <meta property="og:description" content="Free online AI text humanizer and paraphraser. Bypass AI detection, create human-like content, and avoid plagiarism. No login required, 100% free tool." />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://zayuvalya.github.io/AI-Text-Humanizer/" />
-  <meta property="twitter:title" content="ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool" />
-  <meta property="twitter:description" content="Free online AI text humanizer and paraphraser. Bypass AI detection, create human-like content, and avoid plagiarism. No login required, 100% free tool." />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://zayuvalya.github.io/AI-Text-Humanizer/" />
+    <meta property="twitter:title" content="ZAYUVALYA - Free AI Humanizer & Text Paraphraser Tool" />
+    <meta property="twitter:description" content="Free online AI text humanizer and paraphraser. Bypass AI detection, create human-like content, and avoid plagiarism. No login required, 100% free tool." />
 
-  <!-- Additional Tags -->
-  <meta name="google-adsense-account" content="ca-pub-6143942455004391">
-  <meta name="google-site-verification" content="your-verification-code" />
-  <link rel="canonical" href="https://zayuvalya.github.io/AI-Text-Humanizer/" />
+    <!-- Additional Tags -->
+    <meta name="google-adsense-account" content="ca-pub-6143942455004391">
+    <meta name="google-site-verification" content="your-verification-code" />
+    <link rel="canonical" href="https://zayuvalya.github.io/AI-Text-Humanizer/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Kode CSS tambahan */
-    .highlight {
-      background-color: cyan;
-      padding: 0 2px;
-      border-radius: 2px;
-      color: black;
-    }
-    /* Custom scrollbar untuk preview output */
-    #outputPreview::-webkit-scrollbar {
-      width: 6px;
-    }
-    #outputPreview::-webkit-scrollbar-thumb {
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 3px;
-    }
-  </style>
 </head>
-<body class="bg-gray-800 text-gray-100 font-roboto">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <!-- Header -->
-    <header class="flex flex-col sm:flex-row justify-between items-center mb-8">
-      <h1 class="text-3xl font-bold mb-4 sm:mb-0">ZAYUVALYA - AI Humanizer</h1>
-      <nav>
-        <a href="https://github.com/ZAYUVALYA" class="text-blue-400 hover:underline text-lg">Get More Tools</a>
-      </nav>
-    </header>
-
-    <!-- Main Content Section -->
-    <section class="bg-gray-700 p-6 rounded-xl shadow-sm mb-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Input Box -->
-        <div>
-          <h2 class="text-xl font-semibold mb-3">Input</h2>
-          <textarea id="inputText" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-600 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your text here..." style="min-height: 130px;"></textarea>
-          <div class="flex justify-between mt-2 text-sm text-gray-300">
-            <p>Word Count: <span id="wordCount">0</span></p>
-            <p>Sentence Count: <span id="sentenceCount">0</span></p>
-          </div>
-        </div>
-        <!-- Output Box -->
-        <div>
-          <h2 class="text-xl font-semibold mb-3">Output</h2>
-          <div id="outputPreview" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-600 text-gray-100 h-32 overflow-y-auto"></div>
-          <textarea id="outputText" class="w-full p-3 border border-gray-600 rounded-lg bg-gray-600 text-gray-100 hidden" readonly></textarea>
-          <div class="flex justify-between mt-2 text-sm text-gray-300">
-            <p>Word Count: <span id="outputWordCount">0</span></p>
-            <p>Sentence Count: <span id="outputSentenceCount">0</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row justify-end mt-6 gap-3">
-        <button id="paraphraseBtn" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">Paraphrase</button>
-        <button id="copyBtn" class="bg-gray-500 text-white px-6 py-2 rounded-full hover:bg-gray-600 transition">Copy Output</button>
-      </div>
-    </section>
-
-    <!-- About the Project -->
-    <section class="bg-gray-700 p-6 rounded-xl shadow-sm mb-8">
-      <h2 class="text-2xl font-semibold mb-4">About the Project</h2>
-      <p class="mb-3">Welcome to ZAYUVALYA - AI Humanizer, a powerful paraphrasing tool designed to humanize text effortlessly. This tool is completely free, open-source, and requires no login. It’s built for writers, students, and anyone who needs text rephrased while preserving its meaning and natural tone.</p>
-      <p class="mb-3">Our tool uses a robust synonym-based engine that considers the context of your input, ensuring that essential terms and names remain unchanged. Highlighted changes in the output make it easy to identify modifications.</p>
-      <p>Currently in development, ZAYUVALYA - AI Humanizer aims to be your go-to text humanizing assistant!</p>
-    </section>
-
-    <!-- Extra Content: Features -->
-    <section class="bg-gray-700 p-6 rounded-xl shadow-sm mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Features</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Real-time text humanizing and paraphrasing with context-aware synonym replacement.</li>
-        <li>Intuitive user interface with dynamic word and sentence count.</li>
-        <li>Open source and community-driven development for continuous improvements.</li>
-      </ul>
-    </section>
-
-    <!-- How to Use -->
-    <section class="bg-gray-700 p-6 rounded-xl shadow-sm mb-8">
-      <h2 class="text-2xl font-semibold mb-4">How to Use</h2>
-      <ol class="list-decimal list-inside space-y-2 text-gray-300">
-        <li>Enter your text in the input box on the left.</li>
-        <li>Click the <strong>Paraphrase</strong> button to see the humanized text appear on the right.</li>
-        <li>Words replaced are highlighted for easy identification.</li>
-        <li>Use the <strong>Copy Output</strong> button to copy the results.</li>
-        <li>Track word and sentence counts below the input and output boxes.</li>
-      </ol>
-    </section>
-
-    <!-- Open Source Project & Donate -->
-    <section class="bg-gray-700 p-6 rounded-xl shadow-sm mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Open Source Project</h2>
-      <p class="mb-4 text-gray-300">ZAYUVALYA - AI Humanizer is an open-source project. Feel free to contribute, fork, or share your feedback on our GitHub repository. Together, let’s make text paraphrasing smarter and more accessible!</p>
-      <div class="flex flex-wrap gap-4">
-        <a href="https://github.com/ZAYUVALYA/AI-Text-Humanizer" target="_blank" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition inline-flex items-center">
-          <i class="fab fa-github mr-2"></i> Project Repository
-        </a>
-      </div>
-      <!-- Donation Section -->
-      <div class="mt-6">
-        <h3 class="text-xl font-semibold mb-3">Donate</h3>
-        <div class="flex flex-wrap gap-4">
-          <a href="http://paypal.me/VIVALDIMAZZA" target="_blank" class="flex items-center px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
-            <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/paypal/default.svg" alt="Paypal" class="w-6 h-6 mr-2" />
-            Donate via Paypal
-          </a>
-          <a href="http://lynk.id/milyohiro/s/DaJ072Z" target="_blank" class="flex items-center px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
-            <img src="https://home.oxygen.id/assets/images/info-pembayaran/qris-logo.png" alt="QRIS" class="w-6 h-6 mr-2" />
-            Donate via QRIS
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center py-4 border-t border-gray-600">
-        <p class="text-sm text-gray-400">
-          &copy; <span id="currentYear"></span> ZAYUVALYA. Built with ❤️ for the community. 
-        </p>
-      </footer>
-  </div>
-
-  <!-- Scripts -->
-  <script>
-    document.addEventListener('input', function (event) {
-      if (event.target.tagName.toLowerCase() === 'textarea') {
-        autoExpand(event.target);
-      }
-    }, false);
-
-    function autoExpand(field) {
-      field.style.height = 'inherit';
-      const computed = window.getComputedStyle(field);
-      const height = parseInt(computed.getPropertyValue('border-top-width'), 10)
-          + parseInt(computed.getPropertyValue('padding-top'), 10)
-          + field.scrollHeight
-          + parseInt(computed.getPropertyValue('padding-bottom'), 10)
-          + parseInt(computed.getPropertyValue('border-bottom-width'), 10);
-      field.style.height = height + 'px';
-    }
-
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-  </script>
-  <script src="script.js"></script>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">ZAYUVALYA - AI Text Humanizer</h1>
+            <p class="tagline">Transform AI-generated content into natural, human-like writing</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2 class="card-title"><i class="fas fa-keyboard"></i> Input Text</h2>
+                <div class="input-group">
+                    <textarea id="ai-input" placeholder="Paste your AI-generated text here..." maxlength="5000"></textarea>
+                    <div id="char-count" class="char-count">0/5000 characters</div>
+                    <button id="humanize-btn" class="btn">
+                        <span>Humanize Text</span>
+                        <div id="spinner" class="spinner"></div>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title"><i class="fas fa-file-alt"></i> Humanized Output</h2>
+                <div class="output-container">
+                    <textarea id="human-output" placeholder="Your humanized text will appear here..." readonly></textarea>
+                    <div class="output-actions">
+                        <button id="copy-btn" class="btn btn-secondary" title="Copy to clipboard">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title"><i class="fas fa-lightbulb"></i> How It Works</h2>
+                <p>Our AI Text Humanizer transforms robotic, AI-generated content into natural, engaging text that reads like it was written by a human. The process involves:</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-comment-alt"></i></div>
+                        <h3 class="feature-title">Conversational Tone</h3>
+                        <p>Uses natural language and avoids complex jargon</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-grip-lines"></i></div>
+                        <h3 class="feature-title">Concise Sentences</h3>
+                        <p>Short, punchy sentences for better readability</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-book"></i></div>
+                        <h3 class="feature-title">Simple Language</h3>
+                        <p>Universal readability level for accessibility</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-list"></i></div>
+                        <h3 class="feature-title">Smart Formatting</h3>
+                        <p>Bullet points and emphasis for clarity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title"><i class="fas fa-info-circle"></i> About This Service</h2>
+                <p>ZAYUVALYA AI Text Humanizer is a free service developed under the ZAYUVALYA organization (zayuvalya.github.io) to help content creators, marketers, and writers transform AI-generated content into natural, human-sounding text.</p>
+                <p>Our advanced algorithm follows strict guidelines to ensure the output is engaging, authentic, and free from robotic patterns typical of AI-generated content. We avoid promotional jargon, complex structures, and maintain a natural flow throughout the text.</p>
+                <p>This service remains completely free to use thanks to our supporters and contributors who believe in accessible AI tools for everyone.</p>
+            </div>
+        </main>
+        
+        <section class="donation-section">
+            <h2 class="donation-title">Support Our Project</h2>
+            <p class="donation-text">
+                We're committed to keeping ZAYUVALYA AI Text Humanizer free for everyone. Your donations help support our developers in maintaining and improving this service. Every contribution allows us to enhance the tool, add new features, and ensure it remains accessible to all users.
+            </p>
+            
+            <div class="donation-links">
+                <a href="http://paypal.me/VIVALDIMAZZA" target="_blank" class="donation-link">
+                    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/paypal/default.svg" alt="PayPal">
+                    <span>Donate via PayPal</span>
+                </a>
+                
+                <a href="http://lynk.id/milyohiro/s/DaJ072Z" target="_blank" class="donation-link">
+                    <img src="https://home.oxygen.id/assets/images/info-pembayaran/qris-logo.png" alt="LYNK ID QRIS">
+                    <span>Donate via QRIS</span>
+                </a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; <span id="current-year"></span> ZAYUVALYA - AI Text Humanizer. All rights reserved.</p>
+            <p>Part of the <a href="zayuvalya.github.io">ZAYUVALYA</a>.</p>
+        </footer>
+    </div>
+    
+    <div id="notification" class="notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Text copied to clipboard!</span>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
