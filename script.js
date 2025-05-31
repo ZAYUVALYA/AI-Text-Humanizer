@@ -43,11 +43,8 @@
                 humanizeBtn.querySelector('span').textContent = 'Processing...';
                 
                 // Create the prompt
-                const prompt = `You are an AI humanization specialist. Rewrite the provided AI-generated text to sound authentically human-written. The text you'll transform is: \`${text}\`. 
-
-Adopt a conversational tone using concise language and avoid complex jargon. Prioritize short, punchy sentences to enhance engagement. Maintain a 7th-grade readability level with universally understandable vocabulary. Strategically incorporate rhetorical fragments to improve flow and digestibility. When listing concepts, utilize bullet points for clarity. Enrich explanations with relatable analogies or concrete examples. Break apart lengthy sentences into shorter, impactful phrases. Inject personal anecdotes to add authenticity and relatability. Apply the same writing format as the original text. The main task here is just to humanize it. Avoid using any specific formatting like markdown, HTML, or code blocks if the source / original text doesn't have it!.
-
-Exclude all emojis and hashtags entirely. Avoid hyperbolic promotional language like "game-changing," "unlock," "master," "skyrocket," or "revolutionize." Your primary objective is to produce natural, engaging content indistinguishable from human-authored writing while preserving all core information from the original text.`;
+                const prompt = `Revise the following text to sound more human and natural, minimizing patterns typically associated with AI-generated writing. Use a mix of short and long sentences, and vary sentence structures to avoid mechanical rhythm. Eliminate repetitive phrases or overused expressions, ensuring lexical diversity across the entire text. Avoid overly formal or technical language unless contextually required, and reduce excessive passive voice constructions. Keep paragraph lengths varied and coherent. Break down noun-heavy phrases and reduce nominalization where possible. Alternate discourse markers and transition signals naturally. Maintain semantic clarity while allowing occasional conversational tone to make the writing feel authentic. Here's the text: \`${text}\`
+`;
                 
                 // Encode the prompt for URL
                 const encodedPrompt = encodeURIComponent(prompt);
